@@ -1,0 +1,9 @@
+<td>{{release.id}}</td>
+<td class="data">
+{{#if isEditing}}
+    {{view App.EditReleaseView}}
+  {{else}}
+    {{release.fullData}}
+  {{/if}}
+
+</td>

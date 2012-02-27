@@ -1,0 +1,12 @@
+<h1>Releases</h1>
+
+<script type="text/x-handlebars">
+  {{ view App.ListReleasesView }}
+</script>
+
+
+<script type="text/javascript">
+  $(function() {
+    App.releasesController.loadAll(<%= @releases.to_json.html_safe %>);
+  });
+</script>

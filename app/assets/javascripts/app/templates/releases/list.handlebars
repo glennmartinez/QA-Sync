@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each releases}}
+    {{view App.ShowReleaseView releaseBinding="this"}}
+  {{/each}}
+  {{#if isNewVisible}}
+    <tr>
+      <td>*</td>
+      <td>
+        {{view App.NewReleaseView}}
+      </td>
+    </tr>
+  {{/if}}
+  </tbody>
+</table>
