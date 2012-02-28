@@ -1,6 +1,7 @@
-{{#with contact}}
+{{#with release}}
   {{view Ember.TextField valueBinding="name" placeholder="Name"}}
-  {{view Ember.TextField valueBinding="Description"  placeholder="Description"}}
+  {{view Ember.TextField valueBinding="description"  placeholder="Description"}}
+   {{view Ember.TextField valueBinding="features"  placeholder="Features"}}
   <button type="submit">
     {{#if id}}Update{{else}}Create{{/if}}
   </button>

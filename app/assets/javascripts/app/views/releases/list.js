@@ -12,6 +12,6 @@ App.ListReleasesView = Ember.View.extend({
   },
 
   refreshListing: function() {
-    App.contactsController.findAll();
+    App.releasesController.findAll();
   }
 });

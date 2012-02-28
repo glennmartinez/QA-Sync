@@ -5,5 +5,11 @@
   {{else}}
     {{release.fullData}}
   {{/if}}
+    <div class="commands">
+    {{#unless isEditing}}
+      <a href="#" {{action "showEdit"}}>Edit</a>
+      <a href="#" {{action "destroyRecord"}}>Remove</a>
+    {{/unless}}
+  </div>
 
 </td>

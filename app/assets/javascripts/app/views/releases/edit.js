@@ -22,7 +22,7 @@ App.EditReleaseView = Ember.View.extend({
 
   submit: function(event) {
     var self = this;
-    var contact = this.get("release");
+    var release = this.get("release");
 
     event.preventDefault();
 
