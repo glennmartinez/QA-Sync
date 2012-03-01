@@ -1,7 +1,7 @@
 App.ShowReleaseView = Ember.View.extend({
   templateName: 'app/templates/releases/show',
   classNames:   ['show-release'],
-  tagName:      'tr',
+//  tagName:      'tr',
 
   doubleClick: function() {
     this.showEdit();

@@ -1,26 +1,16 @@
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Description</th>
-       <th>Features</th>
-    </tr>
-  </thead>
-  <tbody>
+ 
+<ul>
   {{#each releases}}
     {{view App.ShowReleaseView releaseBinding="this"}}
   {{/each}}
-  {{#if isNewVisible}}
-    <tr>
-      <td>*</td>
-      <td>
+ 
+</ul>
+
+ {{#if isNewVisible}}
+   
         {{view App.NewReleaseView}}
-      </td>
-    </tr>
+    
   {{/if}}
-  </tbody>
-</table>
 <div class="commands">
   <a href="#" {{action "showNew"}}>New Release</a>
   <a href="#" {{action "refreshListing"}}>Refresh Listing</a>
