@@ -4,6 +4,12 @@
   {{ view App.ListReleasesView }}
 </script>
 
+<script type="text/x-handlebars">
+ {{#if App.selectedReleaseController.release}}
+  {{ view App.ReleaseDataView }}
+
+ {{/if}}
+</script>
 
 
 

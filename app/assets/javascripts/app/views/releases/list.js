@@ -15,3 +15,8 @@ App.ListReleasesView = Ember.View.extend({
     App.releasesController.findAll();
   }
 });
+
+
+App.selectedReleaseController = Ember.Object.create({
+  release: null
+});
