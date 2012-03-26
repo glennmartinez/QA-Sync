@@ -5,4 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Release.create(name: 'first release', description:'this is the first', features: '22')
+Release.create(name: 'first release', description:'this is the first', )
+
+Feature.create(name:'super coool feature', description:'excellent', release_id: '1' )

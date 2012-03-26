@@ -1,4 +1,6 @@
 Qasync::Application.routes.draw do
+  resources :features
+
   root :to => 'releases#index'
   resources :releases
 

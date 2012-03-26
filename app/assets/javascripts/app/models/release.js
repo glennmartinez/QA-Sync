@@ -1,7 +1,7 @@
 App.Release  = Ember.Resource.extend({
   resourceUrl: '/releases',
   resourceName: 'release',
-  resourceProperties: ['name', 'description' , 'features'],
+  resourceProperties: ['name', 'description'],
 
   validate: function() {
     if (this.get('name') === undefined || this.get('name') === '' ||
@@ -11,6 +11,6 @@ App.Release  = Ember.Resource.extend({
   },
 
   fullData: Ember.computed(function() {
-    return this.get('name') + ' ' + this.get('description') + ' ' + this.get('features');
-  }).property('name', 'description', 'features')
+    return this.get('name') + ' ' + this.get('description') ;
+  }).property('name', 'description' )
 });
